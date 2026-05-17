@@ -143,3 +143,31 @@ body::before {
   opacity: var(--vine-opacity, 0.2);
   pointer-events: none;
 }
+
+/* --- Typography --- */
+h1,
+h2,
+h3 {
+  line-height: var(--line-height-heading);
+  font-weight: 700;
+  margin: 0 0 var(--space-sm);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-green-700);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  color: var(--color-green-500);
+}
+
+p {
+  margin: 0 0 var(--space-md);
+}
+
+small {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
