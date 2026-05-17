@@ -282,3 +282,98 @@ nav a[aria-current="page"] {
   color: var(--color-nav-link-active-text);
   background-color: var(--color-nav-link-active-bg);
 }
+
+/* --- Icon links --- */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  text-decoration: none;
+}
+
+.icon-link img {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+site-footer .icon-link img {
+  filter: brightness(0) invert(1);
+}
+
+/* --- Links --- */
+a {
+  color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* --- Buttons --- */
+button,
+.btn,
+input[type="submit"] {
+  display: inline-block;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  line-height: 1.2;
+  padding: var(--btn-padding-block) var(--btn-padding-inline);
+  border: 1px solid var(--color-btn-bg);
+  border-radius: var(--radius-md);
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+  background-color: var(--color-btn-bg-hover);
+  border-color: var(--color-btn-bg-hover);
+  color: var(--color-btn-text);
+}
+
+button:active,
+.btn:active,
+input[type="submit"]:active {
+  background-color: var(--color-btn-bg-active);
+  border-color: var(--color-btn-bg-active);
+  color: var(--color-text-on-accent);
+  transform: translateY(1px);
+}
+
+button:focus-visible,
+.btn:focus-visible,
+input[type="submit"]:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.btn + .btn,
+button + button,
+input[type="submit"] + input[type="submit"] {
+  margin-left: var(--space-md);
+  margin-top: var(--space-md);
+}
