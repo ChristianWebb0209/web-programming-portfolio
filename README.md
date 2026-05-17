@@ -20,6 +20,15 @@
     - Standard HTML form that sends an email to my burner email
     - It should create the message with a note at the top specifying it came from this site
 
+## Aesthetic:
+
+132a13
+31572c
+4f772d
+90a955
+ecf39e
+
+Maybe I will try EB Garamond for the font? I used it for another project and it looked pretty cool.
 
 ## Links and stuff to include:
 

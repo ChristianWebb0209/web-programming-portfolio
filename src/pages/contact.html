@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact me</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/page-header.css">
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body data-page="contact">
+  <site-nav>
+    <nav><ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul></nav>
+  </site-nav>
+  <main>
+    <page-header>
+      <h1>Contact</h1>
+      <p class="page-header__tagline">Questions, collaboration, or just saying hi — I'd love to hear from you.</p>
+    </page-header>
+    <form id="contact-form" method="post" action="#">
+      <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-field">
+        <label for="body">Message</label>
+        <textarea id="body" name="body" rows="8" required placeholder="What would you like to get in touch about?"></textarea>
+      </p>
+      <p class="form-field">
+        <label for="from">Your email</label>
+        <input id="from" name="from" type="email" required autocomplete="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Enter an email with @ and a dot in the domain." placeholder="name@example.com">
+      </p>
+      <p class="form-field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required autocomplete="name" placeholder="How you'd like to be addressed in a reply">
+      </p>
+      <p id="contact-status" class="form-status" role="status" aria-live="polite" hidden></p>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <site-footer></site-footer>
+  <script type="module" src="../js/site-footer.js"></script>
+</body>
+</html>

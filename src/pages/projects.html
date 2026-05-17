@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects, Christian Webb</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/page-header.css">
+</head>
+<body data-page="projects">
+  <site-nav>
+    <nav><ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </site-nav>
+  <main>
+    <page-header>
+      <h1>Projects</h1>
+      <p class="page-header__tagline">Deep dives on what I've been building, starting with my Unreal AI assistant.</p>
+    </page-header>
+    <article>
+      <h2>Unreal Engine AI Assistant</h2>
+      <p><a class="icon-link" href="https://github.com/ChristianWebb0209/unreal-engine-ai-assistant">
+        <img src="../assets/icons/github-icon.svg" alt="" width="20" height="20">View on GitHub
+      </a></p>
+      <p>One challenge I faced was making a tooling layer that could create blueprints (the visual scripting language used in Unreal), since there are many different types of them, and all of the formatting is somewhat obscure, so the LLMs don’t have much if any training data. My solution was to make about a dozen agent types for specific blueprint types, then have one main orchestration agent that didn’t have the power to mutate anything, and would just create subtasks and delegate to the appropriate subagent. This main agent was only given a few tools, but was given a detailed description of each subagent type at its disposal and what they were capable of. This allowed me to put a lot more useful stuff about formatting and fit a lot more tool schemas in the context windows of each call to a subagent, which both led to higher accuracy and actually successfully mutating the blueprints, but this also led to the drawback of being slower and requiring more LLM roundtrips, and also using more tokens.</p>
+      <p>Another challenge is that Unreal Engine projects are massive, usually dozens of gigabytes, so my agents constantly hallucinated paths to assets that they thought existed. My solution was to establish a heuristic throughout all of the prompt chunks that any mutation must be preceded by a discovery phase, meaning unless the path to an asset was already given (since the most likely paths are usually included in the context window already), the agent must run grep tools / do some sort of discovery to verify the path before mutating.</p>
+    </article>
+  </main>
+  <site-footer></site-footer>
+  <script type="module" src="../js/site-footer.js"></script>
+</body>
+</html>
