@@ -25,7 +25,7 @@
 
 /* --- Tokens --- */
 :root {
-  /* Palette (darkest ΓåÆ lightest) */
+  /* Palette (darkest → lightest) */
   --color-green-900: #132a13;
   --color-green-700: #31572c;
   --color-green-500: #4f772d;
@@ -444,4 +444,65 @@ form button,
 form input[type="submit"] {
   justify-self: start;
   margin-top: var(--space-sm);
+}
+
+/* --- Components --- */
+.github-widget {
+  margin: var(--space-md) 0;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-green-300);
+  border-left: 4px solid var(--color-green-500);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.github-widget[data-state="loading"] {
+  opacity: 0.7;
+  color: var(--color-text-muted);
+}
+
+.github-widget[data-state="error"] {
+  border-left-color: var(--color-error);
+}
+
+/* --- Footer --- */
+site-footer {
+  display: block;
+  margin-top: auto;
+}
+
+site-footer footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  border-top: 3px solid var(--color-chrome-border);
+  background: var(--color-chrome-bg);
+  color: var(--color-chrome-text);
+}
+
+site-footer footer p {
+  margin: 0;
+}
+
+site-footer footer small {
+  color: color-mix(in srgb, var(--color-chrome-text) 75%, transparent);
+}
+
+site-footer .footer-links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+site-footer footer a:not(.btn) {
+  color: var(--color-chrome-text);
+}
+
+site-footer footer a:not(.btn):hover {
+  color: var(--color-chrome-text-muted);
 }
