@@ -1,0 +1,13 @@
+/* --- About page layout --- */
+.about-main {
+  text-align: center;
+}
+
+.about-main .social-links {
+  justify-content: center;
+}
+
+.about-main .content-card p {
+  max-width: 42ch;
+  margin-inline: auto;
+}
