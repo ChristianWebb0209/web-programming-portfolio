@@ -1,36 +1,7 @@
 
-Skip To Content
-Dashboard
-Christian Webb
-Account
-Dashboard
-Courses
-Groups
-Calendar
-70 unread messages.70
-Inbox
-History
-TimelyCare
-10 unread release notes.10
-Help
-COMP-494AssignmentsSmall Portfolio and Project
-Campus Spring 2026
-Home
-Announcements
-Assignments
-Discussions
-Grades9
-People
-Files
-Syllabus
-BigBlueButton
-Collaborations
-Zoom
-Course Evaluations
-Library Reserves
-Parchment Badges
-Copley Research Resources
-Panopto Video
+Assignment info for LLM assistance
+
+
 Small Portfolio and Project 
 Due Monday by 11:59pm Points 100 Submitting a text entry box or a website url Available May 5 at 12am - May 20 at 11:59pm
 Overview

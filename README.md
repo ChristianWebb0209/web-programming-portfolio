@@ -5,17 +5,20 @@
 ## Content:
 
 - Top navigation 
-- - web component, I should do some cool CSS animation stuff for this
+    - web component, I should do some cool CSS animation stuff for this
 - About page
-- - Introuce myself, maybe take from a previous cover letter
-- - What cool visual attention getter could I put here?
+    - Introuce myself, maybe take from a previous cover letter
+    - What cool visual attention getter could I put here?
 - Resume page
-- - Download button at the top
-- - Maybe have pdf viewer right there? This would be an acceptable dependency to use I think in prof's eyes
+    - Download button at the top
+    - Maybe have pdf viewer right there? This would be an acceptable dependency to use I think in prof's eyes
 - Projects page
-- - Probably just talk about Unreal AI Editor (my main project)
-- - Maybe something about the game we made in 305?
-- - Maybe a video demonstration of project?
+    - Probably just talk about Unreal AI Editor (my main project)
+    - Maybe something about the game we made in 305?
+    - Maybe a video demonstration of project?
+- Contact me page
+    - Standard HTML form that sends an email to my burner email
+    - It should create the message with a note at the top specifying it came from this site
 
 
 ## Links and stuff to include:
