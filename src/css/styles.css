@@ -171,3 +171,58 @@ small {
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
 }
+
+/* --- Layout --- */
+main {
+  flex: 1;
+  width: min(100% - var(--space-lg) * 2, var(--content-max-width));
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md) var(--space-xl);
+}
+
+main > :first-child {
+  margin-top: 0;
+}
+
+main > header:not(.page-header__inner) {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+section + section,
+article,
+.content-card {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+article object[type="application/pdf"] {
+  display: block;
+  width: 100%;
+  min-height: 70vh;
+  border: 0;
+}
+
+.promo-card {
+  text-align: center;
+}
+
+.promo-card .promo-heading {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-green-700);
+  margin: 0 0 var(--space-sm);
+  text-decoration: underline;
+  text-decoration-color: var(--color-green-500);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.promo-card p:last-child {
+  margin-bottom: 0;
+}
