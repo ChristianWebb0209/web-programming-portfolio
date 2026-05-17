@@ -1,0 +1,85 @@
+/* --- Tokens --- */
+:root {
+  /* Palette (darkest ΓåÆ lightest) */
+  --color-green-900: #132a13;
+  --color-green-700: #31572c;
+  --color-green-500: #4f772d;
+  --color-green-300: #90a955;
+  --color-green-100: #ecf39e;
+
+  /* Accent */
+  --color-accent: var(--color-green-500);
+  --color-accent-hover: var(--color-green-700);
+  --color-accent-active: var(--color-green-900);
+  --color-accent-muted: var(--color-green-300);
+  --color-accent-subtle: color-mix(in srgb, var(--color-green-100) 78%, var(--color-green-300));
+  --color-highlight: var(--color-green-100);
+
+  /* Buttons */
+  --btn-padding-block: var(--space-sm);
+  --btn-padding-inline: var(--space-md);
+  --color-btn-bg: var(--color-green-300);
+  --color-btn-bg-hover: color-mix(in srgb, var(--color-green-100) 65%, var(--color-green-300));
+  --color-btn-bg-active: var(--color-green-500);
+  --color-btn-text: var(--color-green-900);
+
+  /* Surfaces */
+  --color-bg: var(--color-green-100);
+  --color-bg-elevated: color-mix(in srgb, var(--color-green-100) 82%, var(--color-green-300));
+  --color-surface: color-mix(in srgb, var(--color-green-300) 22%, var(--color-green-100));
+
+  /* Text */
+  --color-text: var(--color-green-900);
+  --color-text-muted: var(--color-green-700);
+  --color-text-on-accent: var(--color-green-100);
+  --color-text-on-dark: var(--color-green-100);
+
+  /* Nav */
+  --color-nav-bar-bg: color-mix(in srgb, var(--color-green-100) 72%, var(--color-green-300));
+  --color-nav-link: var(--color-green-700);
+  --color-nav-link-hover-bg: color-mix(in srgb, var(--color-green-300) 28%, var(--color-green-100));
+  --color-nav-link-active-bg: var(--color-green-500);
+  --color-nav-link-active-text: var(--color-green-100);
+  --color-nav-divider: color-mix(in srgb, var(--color-green-500) 22%, var(--color-green-100));
+
+  /* Footer */
+  --color-chrome-bg: var(--color-green-700);
+  --color-chrome-border: var(--color-green-500);
+  --color-chrome-text: var(--color-green-100);
+  --color-chrome-text-muted: var(--color-green-100);
+  --color-footer-bg: var(--color-chrome-bg);
+  --color-footer-text: var(--color-chrome-text);
+
+  /* Borders & focus */
+  --color-border: color-mix(in srgb, var(--color-green-300) 50%, var(--color-green-100));
+  --color-border-focus: var(--color-green-500);
+  --color-error: #b3261e;
+
+  /* Typography */
+  --font-family-serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-size-base: 1.125rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: clamp(2rem, 5vw, 2.75rem);
+  --line-height-base: 1.6;
+  --line-height-heading: 1.2;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  /* Layout */
+  --content-max-width: 42rem;
+  --nav-gap: var(--space-md);
+
+  /* Shape & motion */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --shadow-sm: 0 1px 4px rgb(19 42 19 / 0.12);
+  --shadow-md: 0 4px 12px rgb(19 42 19 / 0.1);
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+}
