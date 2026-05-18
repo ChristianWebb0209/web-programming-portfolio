@@ -16,7 +16,7 @@ todo
 
 ## Run locally
 
-Run a local static server from src/pages/index.html which is the entry point.
+Run a local static server from the repository root 
 
 ## Application demonstration
 

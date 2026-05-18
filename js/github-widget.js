@@ -1,6 +1,6 @@
 import { iconLink } from "./social-links.js";
 
-const GITHUB_ICON = "../assets/icons/github-icon.svg";
+const GITHUB_ICON = "assets/icons/github-icon.svg";
 
 function escapeHtml(value) {
   return String(value)
