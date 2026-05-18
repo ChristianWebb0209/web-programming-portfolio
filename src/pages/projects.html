@@ -30,7 +30,21 @@
       <p>Another challenge is that Unreal Engine projects are massive, usually dozens of gigabytes, so my agents constantly hallucinated paths to assets that they thought existed. My solution was to establish a heuristic throughout all of the prompt chunks that any mutation must be preceded by a discovery phase, meaning unless the path to an asset was already given (since the most likely paths are usually included in the context window already), the agent must run grep tools / do some sort of discovery to verify the path before mutating.</p>
     </article>
   </main>
-  <site-footer></site-footer>
+  <site-footer>
+    <footer>
+      <p><small>Christian Webb</small></p>
+      <p class="footer-links">
+        <a class="icon-link" href="https://github.com/ChristianWebb0209" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/icons/github-icon.svg" alt="" width="20" height="20">GitHub
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/christian-webb-76530928a/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/icons/linkedin-icon.svg" alt="" width="20" height="20">LinkedIn
+        </a>
+      </p>
+    </footer>
+  </site-footer>
+  <script type="module" src="../js/site-nav.js"></script>
+  <script type="module" src="../js/page-header.js"></script>
   <script type="module" src="../js/site-footer.js"></script>
 </body>
 </html>
