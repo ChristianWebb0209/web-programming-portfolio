@@ -176,7 +176,7 @@ function initContactForm() {
           : "An unexpected error occurred.";
       setStatus(statusEl, {
         type: "is-error",
-        message: `We could not send your message. ${detail} Your message was not delivered — please check your connection and try again.`,
+        message: `We could not send your message. ${detail} Your message was not delivered - please check your connection and try again.`,
       });
     } finally {
       setFormBusy(form, submitBtn, false);
